@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartonera CECB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+        integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta name="description"
+        content="Este site foi feito com todo o carinho para a Feira de Ciências do Colégio Estadual Central do Brasil (CECB).">
+    <meta name="keywords" content="cecb, cartoneiras, cartoneras, portguês, escola, estadual, Colégio Estadual Central do Brasil, Feira de Ciências
+        , criatividade, livros, livro, artesanal">
+    <meta name="author" content="Pedro Gabriel C. da Silva camuri">
+
+    <meta property="og:title" content="Projeto de Feira de Ciências sobre Cartoneiras">
+    <meta property="og:description"
+        content="Este site foi feito com todo o carinho para a Feira de Ciências do Colégio Estadual Central do Brasil (CECB).">
+    <meta property="og:url" content="https://cartoneiras.xyz">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/writeJson.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+    <nav class="navbar navbar-dark header-div-mae d-flex justify-content-center pb-5 pt-4 mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="javascript:void(0);">CECB | <span>Cartoneras</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" href="javascript:void(0);" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon" href="javascript:void(0);"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5> -->
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="javascript:void(0);">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#comosurgiu">O que é uma cartonera?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#comofazer">Como fazer uma cartonera?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/posts.php">Posts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- <div class="container-fluid mb-5">
+
+        <div class="d-flex justify-content-center mb-5">
+            <h1>Como fazer uma cartonera?</h1>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="row d-flex justify-content-center p-lg-5">
+
+
+                <div class="col-8 col-md-4 col-lg-4 text-white d-flex justify-content-center">
+
+                    <div class="card text-dark mt-4 mb-4 d-flex justify-content-center" style="border: 0px">
+                        <div class="card-body">
+                            <h5 class="card-title">Se interessou? 👀</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Conheça um pouco sobre a cartonera antes</h6>
+                            <p class="card-text w-50">Criar uma cartonera pode ser um projeto artístico e sustentável.
+                                Trata-se
+                                de um livro artesanal feito com capas de papelão reutilizado e costura manual. A ideia
+                                surgiu na Argentina para democratizar o acesso à literatura, usando materiais simples e
+                                baratos. A seguir, veja um tutorial completo para montar a sua própria cartonera.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="w-100 mb-3 tratamento-lg"></div>
+
+                
+                <div class="col-8 col-md-4 col-lg text-white d-flex justify-content-start">
+
+
+
+                    <img src="https://www.ufsm.br/app/uploads/sites/601/2021/05/literatura-cartonera.jpg"
+                        style="width: 50%; height: 100%;" alt="">
+
+
+
+                </div>
+
+                <div class="w-100 mb-3 tratamento-lg"></div>
+                <div class="w-100 mb-3 aparecer-lg"></div>
+
+
+
+
+                <div class="w-100 mb-3"></div>
+                <div class="w-100 mb-3 aparecer-lg"></div>
+
+
+
+
+            </div>
+        </div>
+
+    </div> -->
+
+    <div class="d-flex justify-content-center mb-1 mb-lg-4" id="comofazer">
+        <h1>Como fazer uma Cartonera?</h1>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center mb-5">
+        <div class="row d-flex justify-content-center w-75">
+
+            <div class="col-12 col-xl-5">
+                <div class="card text-dark mt-4 mb-4 d-flex justify-content-center w-100" style="border: 0px">
+                    <div class="card-body">
+                        <h5 class="card-title">Se interessou? 👀</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Conheça um pouco sobre a cartonera antes</h6>
+                        <p class="card-text w-100">Criar uma cartonera pode ser um projeto artístico e sustentável.
+                            Trata-se
+                            de um livro artesanal feito com capas de papelão reutilizado e costura manual. A ideia
+                            surgiu na Argentina para democratizar o acesso à literatura, usando materiais simples e
+                            baratos. A seguir, veja um tutorial completo para montar a sua própria cartonera.</p>
+                        <a href="https://vejasp.abril.com.br/wp-content/uploads/2018/11/crc3a9ditos_lauraviana-2.jpg?quality=70&strip=info&w=920&w=636"
+                            target="_blank" class="card-link">Fonte da
+                            Imagem</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-5">
+                <img src="https://vejasp.abril.com.br/wp-content/uploads/2018/11/crc3a9ditos_lauraviana-2.jpg?quality=70&strip=info&w=920&w=636"
+                    style="width: 100%; height: 100%; border-radius: 7px;" alt="">
+            </div>
+
+            <div class="w-100 mt-3 mb-3"></div>
+
+            <div class="col-12 col-xl-5 order-xl-2">
+                <div class="card text-dark mt-4 mb-4 d-flex justify-content-center w-100" style="border: 0px">
+                    <div class="card-body">
+                        <h5 class="card-title">Materiais necessários ✂</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Claro que precisariamos dos materias!</h6>
+                        <p class="card-text w-100">
+                        <p><strong>Papel e conteúdo interno:</strong></p>
+                        <ul>
+                            <li>Folhas A4, sulfite ou recicladas (podem ser impressas ou manuscritas).</li>
+
+                            <li>Pode conter poemas, textos literários, zines, etc.</li>
+                        </ul>
+
+                        <p><strong>Capas:</strong></p>
+
+                        <ul>
+                            <li>Papelão de caixas recicladas (com gramatura não muito espessa para dobrar com
+                                facilidade).</li>
+                            <li>Ferramentas de corte:</li>
+                            <ol>
+                                <li>Estilete ou tesoura.</li>
+                                <li>Régua metálica para cortes precisos.</li>
+                            </ol>
+                        </ul>
+
+                        <p>
+                            <strong>Costura:</strong>
+                        </p>
+
+                        <ul>
+                            <li>Linha resistente (como linha de pipa ou encerada).</li>
+                            <li>Agulha grossa ou furador.
+                        </ul>
+                        </ul>
+                        <p>
+                            <strong>Decoração:</strong>
+                        </p>
+
+                        <ul>
+                            <li>
+                                Tintas acrílicas, lápis de cor, canetinhas, colagens, etc.</li>
+                            <li>Pinceis ou esponjas para pintar.</li>
+                            <li>Cola (opcional, para decorações).</li>
+                        </ul>
+
+                        </p>
+                        <a href="https://sinergiased.org/iniciativas/pachamama-editora-cartonera/" target="_blank"
+                            class="card-link">Fonte da
+                            Imagem</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-5 order-xl-1">
+                <img src="https://sinergiased.org/wp-content/uploads/2022/09/WhatsApp-Image-2022-08-25-at-12.48.45.jpeg"
+                    style="width: 100%; height: 80%; border-radius: 7px;" class="mt-xl-5 mt-0" alt="">
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-center mb-1 mb-lg-4">
+        <h1>Tá, mas e agora? 🤔</h1>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center mb-5">
+        <div class="row d-flex justify-content-center w-75">
+
+            <div class="col-12 col-xl-5">
+                <div class="card text-dark mt-4 mb-4 d-flex justify-content-center w-100" style="border: 0px">
+                    <div class="card-body">
+                        <h5 class="card-title">Agora vamos para o <strong>Passo a Passo</strong>! 📕</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Vamos partir para a preparação!</h6>
+                        <p class="card-text w-100">
+                        <p><strong>Preparação das capas:</strong></p>
+                        <ul>
+                            <li>Pegue o papelão de uma caixa que não seja muito rígido.</li>
+                            <li>Corte dois retângulos de acordo com o tamanho desejado para a cartonera.</li>
+                            <li><strong>Exemplo:</strong></li>
+                            <ol>
+                                <li>15cm x 21cm (A5), mas pode ser qualquer tamanho.</li>
+                            </ol>
+                            <li>Pinte ou decore as capas. Você pode usar tintas, fazer colagens ou desenhar à mão. Deixe
+                                secar se estiver usando tinta.</li>
+                        </ul>
+                        </p>
+                        <a href="https://www.ufsm.br/midias/arco/post98" target="_blank" class="card-link">Fonte da
+                            Imagem</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-5">
+                <img src="https://www.ufsm.br/app/uploads/sites/601/2021/05/literatura-cartonera.jpg"
+                    style="width: 100%; height: 100%; border-radius: 7px;" alt="">
+            </div>
+
+            <div class="w-100 mt-3 mb-3"></div>
+
+            <div class="col-12 col-xl-5 order-xl-2">
+                <div class="card text-dark mt-4 mb-4 d-flex justify-content-center w-100" style="border: 0px">
+                    <div class="card-body">
+                        <h5 class="card-title">Vamos para preparação das folhas! 📑</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Essa é uma das partes mais importantes.</h6>
+                        <p class="card-text w-100">
+                        <p><strong>Preparação das folhas internas:</strong></p>
+                        <ul>
+                            <li>Pegue folhas A4 e dobre-as ao meio, formando cadernos internos (conhecidos como
+                                "cadernetas" ou "miolos").</li>
+
+                            <li>Empilhe de 3 a 5 folhas para cada caderneta. Dobre e pressione bem para a dobra ficar
+                                nítida.</li>
+
+                            <li>Dependendo da espessura do livro, faça várias cadernetas e depois as una.</li>
+                        </ul>
+
+                        <p><strong>Capas:</strong></p>
+
+                        <ul>
+                            <li>Papelão de caixas recicladas (com gramatura não muito espessa para dobrar com
+                                facilidade).</li>
+                            <li>Ferramentas de corte:</li>
+                            <ol>
+                                <li>Estilete ou tesoura.</li>
+                                <li>Régua metálica para cortes precisos.</li>
+                            </ol>
+                        </ul>
+
+                        <p>
+                            <strong>Costura:</strong>
+                        </p>
+
+                        <ul>
+                            <li>Linha resistente (como linha de pipa ou encerada).</li>
+                            <li>Agulha grossa ou furador.
+                        </ul>
+                        </ul>
+                        <p>
+                            <strong>Decoração:</strong>
+                        </p>
+
+                        <ul>
+                            <li>
+                                Tintas acrílicas, lápis de cor, canetinhas, colagens, etc.</li>
+                            <li>Pinceis ou esponjas para pintar.</li>
+                            <li>Cola (opcional, para decorações).</li>
+                        </ul>
+
+                        </p>
+                        <a href="https://malhafinacartonera.wordpress.com/wp-content/uploads/2017/05/img_01531.jpg"
+                            target="_blank" class="card-link">Fonte da
+                            Imagem</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-5 order-xl-1">
+                <img src="https://malhafinacartonera.wordpress.com/wp-content/uploads/2017/05/img_01531.jpg"
+                    style="width: 100%; height: 80%; border-radius: 7px;" class="mt-xl-5 mt-0" alt="">
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center mb-5">
+        <div class="row d-flex justify-content-center w-75">
+
+            <div class="col-12 col-xl-5">
+                <div class="card text-dark mt-4 mb-4 d-flex justify-content-center w-100" style="border: 0px">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Montagem</strong> e <strong>Costura</strong>! 🧵</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Tenham muito cuidado nessa parte!</h6>
+                        <p class="card-text w-100">
+                        <p><strong>Montagem e costura:</strong></p>
+                        <ul>
+                            <li><strong>Alinhando as folhas:</strong> Coloque as cadernetas entre as duas capas de
+                                papelão.</li>
+                            <li><strong>Furando o papel e as capas</strong>:</li>
+                            <ol>
+                                <li>Use uma régua para marcar pontos de perfuração na dobra do papel e nas capas (3 a 5
+                                    furos espaçados).</li>
+                                <li>Fure com uma agulha ou furador nos pontos marcados.</li>
+                            </ol>
+                            <li><strong>Costura manual:</strong></li>
+                            <ol>
+                                <li>Passe a linha pelos furos, começando por dentro do miolo e saindo até a capa.</li>
+                                <li>Costure em ziguezague, passando de um furo para o outro até completar.</li>
+                                <li>Dê um nó firme no final e corte o excesso da linha.</li>
+                            </ol>
+                        </ul>
+                        </p>
+                        <a href="https://malhafinacartonera.wordpress.com/2017/05/10/o-passo-a-passo-cartonero-da-malha-fina/comment-page-1/"
+                            target="_blank" class="card-link">Fonte da
+                            Imagem</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-5">
+                <img src="https://malhafinacartonera.wordpress.com/wp-content/uploads/2017/05/img_01621.jpg?w=1000"
+                    style="width: 100%; height: 100%; border-radius: 7px;" alt="">
+            </div>
+
+            <div class="w-100 mt-3 mb-3"></div>
+
+            <div class="col-12 col-xl-5 order-xl-2">
+                <div class="card text-dark mt-4 mb-4 d-flex justify-content-center w-100" style="border: 0px">
+                    <div class="card-body">
+                        <h5 class="card-title">Acabamento! ✨</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Fácil, né?</h6>
+                        <p class="card-text w-100">
+                        <ul>
+                            <li>Certifique-se de que todas as folhas estão bem alinhadas.</li>
+
+                            <li>Dobre o livro ao meio e pressione para ajustar a lombada.</li>
+
+                            <li>Dependendo da espessura do livro, faça várias cadernetas e depois as una.</li>
+
+                            <li>Se preferir, passe cola na lombada para reforçar.</li>
+
+                            <li>Decore a capa com título, nome do autor e ilustrações adicionais.</li>
+
+                            <p class="mt-3 mb-2"><strong>Extra!</strong></p>
+                            <p class="mt-0 mb-0"><strong>Opção com grampeador</strong></p>
+                            <li>Coloque os miolos entre as capas.</li>
+                            <li>Com o livro dobrado, grampeie no meio da lombada. Use 2 ou 3 grampos.</li>
+                        </ul>
+
+                        </p>
+                        <a href="https://www.bibliotecasdobrasil.com/2016/09/conheca-lista-de-editoras-cartoneras-do_31.html"
+                            target="_blank" class="card-link">Fonte da
+                            Imagem</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-5 order-xl-1">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijJ6Y6X6_s1lCPHlimAYuhLtKbHVIOnjM2dK6m5hJ7J6X8rInf5FwqQNPmi_IwAPhIAOkhEp2NWl0965vruOHtko95oXzheyaM1gaNgSf_0ATrt8znDKPybxgS2SSCIE5hW80ZCovrmPfr/s1600/WP_20160126_12_24_07_Pro.jpg"
+                    style="width: 100%; height: 80%; border-radius: 7px;" class="mt-5" alt="">
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center">
+        <h3 class="mb-4 mt-0"><strong>Pronto! 🎉</strong></h3>
+    </div>
+    <div class="container-fluid d-flex justify-content-center">
+        <p class="mb-0 mt-0">
+        <p class="small-fix-text">Sua cartonera artesanal está concluída. Agora você tem um livro único, personalizado e
+            sustentável. É uma
+            ótima
+            forma de compartilhar literatura, arte e criatividade!</p>
+        </p>
+    </div>
+
+
+    <hr>
+
+    <div class="container-fluid d-flex justify-content-center" id="comosurgiu">
+        <h1 class="mb-4 mt-0"><strong>E como as cartoneiras surgiram?</strong></h1>
+    </div>
+
+    <!-- <div class="container-fluid w-50 row">
+        <p>
+            O movimento começou quando o escritor argentino Washington Cucurto, junto com os artistas Javier Barilaro e
+            Fernando Noy, fundou a primeira editora cartonera, chamada Eloísa Cartonera. O nome faz referência aos
+            catadores
+            de papelão, conhecidos como cartoneros, que recolhiam materiais recicláveis das ruas de Buenos Aires para
+            sobreviver. Na época, o custo de impressão tradicional de livros era muito alto, e a venda de papelão era
+            uma
+            das principais fontes de renda para muitas pessoas.
+
+            Esses artistas e escritores viram uma oportunidade de unir o reciclável e a arte. Decidiram comprar o
+            papelão
+            diretamente dos catadores e usá-lo como capa para livros artesanais, produzidos de maneira simples e barata.
+            As
+            capas eram pintadas e decoradas à mão, e os livros continham poesias, contos e textos literários de autores,
+            incluindo trabalhos inéditos ou de escritores locais que não teriam acesso fácil ao mercado editorial
+            tradicional.
+        </p>
+    </div> -->
+
+    <div class="container-fluid d-flex justify-content-center mb-5">
+        <div class="row d-flex justify-content-center w-75">
+
+
+            <div class="col-12 col-xl-5 order-xl-1">
+                <div class="card text-dark mt-4 mb-4 d-flex justify-content-center w-100" style="border: 0px">
+                    <div class="card-body">
+                        <h5 class="card-title">Hora da História! ✨</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Como surgiram?</h6>
+                        <p class="card-text w-100">
+                        <p>
+                            O movimento começou quando o escritor argentino <strong>Washington Cucurto</strong>, junto
+                            com os artistas
+                            Javier Barilaro e Fernando Noy, fundou a primeira editora cartonera, chamada <strong>Eloísa
+                                Cartonera</strong>. O nome faz referência aos catadores de papelão, conhecidos como
+                            cartoneros, que
+                            recolhiam materiais recicláveis das ruas de Buenos Aires para sobreviver. Na época, o custo
+                            de impressão tradicional de livros era muito alto, e a venda de papelão era uma das
+                            principais fontes de renda para muitas pessoas.
+                        </p>
+
+                        <p>
+                            Esses artistas e escritores viram uma oportunidade de unir o reciclável e a arte. Decidiram
+                            comprar o papelão diretamente dos catadores e usá-lo como capa para livros artesanais,
+                            produzidos de maneira simples e barata. As capas eram pintadas e decoradas à mão, e os
+                            livros continham poesias, contos e textos literários de autores, incluindo trabalhos
+                            inéditos ou de escritores locais que não teriam acesso fácil ao mercado editorial
+                            tradicional.
+                        </p>
+
+                        </p>
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/9/97/Libros_de_Elo%C3%ADsa_Cartonera_2.jpg"
+                            target="_blank" class="card-link">Ler sobre Eloísa</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-5 order-xl-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Libros_de_Elo%C3%ADsa_Cartonera_2.jpg"
+                    style="width: 100%; height: 80%; border-radius: 7px;" class="mt-5" alt="">
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center mb-5">
+        <div class="row d-flex justify-content-center w-75">
+
+
+            <div class="col-12 col-xl-5 order-xl-2">
+                <div class="card text-dark mt-4 mb-4 d-flex justify-content-center w-100" style="border: 0px">
+                    <div class="card-body">
+                        <h5 class="card-title">Impacto social e cultural! 👥</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Como foi o Impacto.</h6>
+                        <p class="card-text w-100">
+
+                        <p>
+                            Além de oferecer uma alternativa ao mercado editorial, as cartoneiras têm um papel
+                            importante na inclusão social. Ao comprar papelão diretamente dos catadores e empregar
+                            métodos artesanais, elas promovem a valorização do trabalho manual e da sustentabilidade, ao
+                            mesmo tempo que oferecem uma plataforma para escritores emergentes. O movimento também cria
+                            uma nova relação entre o leitor e o livro, transformando a experiência de compra em algo
+                            único e pessoal.
+                        </p>
+
+                        <p>
+
+                            As editoras cartoneras desafiam o modelo convencional de produção literária, questionam a
+                            lógica do mercado editorial, e oferecem novas formas de criação e distribuição, todas elas
+                            baseadas na economia solidária, no respeito pelo meio ambiente e na arte colaborativa.
+                        </p>
+
+                        <p>
+                            Essa história das cartoneiras continua viva até hoje, com novas editoras surgindo ao redor
+                            do mundo e trazendo consigo o espírito de inovação, inclusão e criatividade que marcou o
+                            início desse movimento revolucionário no campo da literatura e das artes.
+                        </p>
+
+                        </p>
+                        <a href="https://www.facebook.com/eloisacartoneraok/photos" target="_blank"
+                            class="card-link">Ver sobre Eloísa</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-5 order-xl-1">
+                <img src="https://scontent.fqnv6-1.fna.fbcdn.net/v/t39.30808-6/294639249_447332144068583_2988337513644168041_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=3NhLO7KJdI8Q7kNvgFigkQg&_nc_zt=23&_nc_ht=scontent.fqnv6-1.fna&_nc_gid=Acbh93yqtkTxmgsH-q8voW3&oh=00_AYDdg2RXd79k5tOFFK9xLY4XN5yVzuoUV1-s318_Iw5aWg&oe=671F6932"
+                    style="width: 100%; height: 80%; border-radius: 7px;" class="mt-5" alt="">
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center mb-5">
+        <div class="row d-flex justify-content-center w-75">
+
+
+            <div class="col-12 col-xl-5 order-xl-1">
+                <div class="card text-dark mt-4 mb-4 d-flex justify-content-center w-100" style="border: 0px">
+                    <div class="card-body">
+                        <h5 class="card-title">Principais características! ✨</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">o que faz das Cartoneiras serem sustentaveis?</h6>
+                        <p class="card-text w-100">
+                        <p>
+                            <strong>Reciclagem e sustentabilidade:</strong>
+                        </p>
+
+                        <p>As capas das cartoneiras são feitas com papelão reciclado, adquiridos dos catadores.</p>
+                        <p>
+                            Cada capa é única, pintada e decorada à mão, transformando cada livro em uma obra de arte
+                            personalizada.
+                        </p>
+                        <p>
+                            <strong>Acessibilidade:</strong>
+                        </p>
+                        <p>
+                            O baixo custo de produção permite vender os livros a preços populares, tornando a literatura
+                            acessível para mais pessoas.
+                        </p>
+                        <p>
+                            Muitos escritores, especialmente os menos conhecidos, têm a oportunidade de ver seus
+                            trabalhos publicados.
+                        </p>
+                        <p><strong>Autonomia editorial:</strong></p>
+
+                        <p>
+                            Ao contrário das editoras tradicionais, as editoras cartoneras não seguem os padrões
+                            convencionais de mercado, oferecendo maior liberdade criativa para os escritores e artistas.
+                        </p>
+
+                        </p>
+                        <!-- <a href="https://upload.wikimedia.org/wikipedia/commons/9/97/Libros_de_Elo%C3%ADsa_Cartonera_2.jpg"
+                            target="_blank" class="card-link">Ler sobre Eloísa</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-5 order-xl-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Libros_de_Elo%C3%ADsa_Cartonera_2.jpg"
+                    style="width: 100%; height: 80%; border-radius: 7px;" class="mt-5" alt="">
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid">
+        <footer class="bg-dark row text-white ">
+            <div class="col-12 col-lg-3 mt-3 mb-3 pe-5 ps-5 pt-3 pb-3">
+                <div>
+                    <h4>Contribuição:</h4>
+                </div>
+                <div class="d-flex justify-content-start ">
+                    <div class="row d-flex justify-content-center justify-content-lg-start">
+                        <div class="col-12">Pedro Gabriel Carvalho</div>
+                        <div class="col-12">Luis Miguel</div>
+                        <div class="col-12">Miguel França</div>
+                        <div class="col-12">Gabriel Canedo</div>
+                        <div class="col-12">Ruan Rodrigues</div>
+                        <div class="col-12"><a href="/pages/specialStage.html" target="_blank"
+                                class="link-footer">Clique para
+                                surpresakk</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 mt-3 mb-3 pe-5 ps-5 pt-lg-3 pb-lg-3">
+                <div>
+                    <h4>Supervisão do Projeto:</h4>
+                </div>
+                <div class="d-flex justify-content-start">
+                    <div class="row">
+                        <div class="col-12">Prof. Cíntia</div>
+                        <div class="col-12">Diretor Renato</div>
+                        <div class="col-12">Diretoria da CECB</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 mt-3 mb-3 pe-5 ps-5 pt-lg-3 pb-lg-3">
+                <div>
+                    <h4>Avaliadores do Projeto:</h4>
+                </div>
+                <div class="d-flex justify-content-start">
+                    <div class="row">
+                        <div class="col-12">Sem inf.</div>
+                        <div class="col-12">Sem inf.</div>
+                        <div class="col-12">Sem inf.</div>
+                        <div class="col-12">Sem inf.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 mt-3 mb-3 pe-5 ps-5 pt-lg-3 pb-lg-3">
+                <div>
+                    <h4>Contribua com o dev:</h4>
+                </div>
+                <div class="d-flex justify-content-start">
+                    <div class="row">
+                        <div class="col-12"><a href="https://github.com/imPepoDev" target="_blank"
+                                class="link-footer">GitHub</a></div>
+                        <div class="col-12"><a href="https://www.instagram.com/kur3gumo/" target="_blank"
+                                class="link-footer">Instagram</a></div>
+                        <div class="col-12"><a
+                                href="https://open.spotify.com/playlist/4dUctUwh6wL1WUc9llZG8y?si=1U33OUqdSLWSeNqqDlbyrg"
+                                target="_blank" class="link-footer">Playlist que me apoiou</a></div>
+                        <!-- <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/playlist/4dUctUwh6wL1WUc9llZG8y?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</body>
+
+</html>

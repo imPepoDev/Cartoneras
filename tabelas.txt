@@ -1,0 +1,15 @@
+CREATE TABLE posts_cartoneiras (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    header_texto VARCHAR(255),
+    descricao_texto TEXT,
+    criador_post VARCHAR(100),
+    autorizado BOOLEAN DEFAULT false
+);
+
+
+CREATE TABLE imagens_post (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    post_id INT,
+    imagem_blob LONGBLOB,
+    FOREIGN KEY (post_id) REFERENCES posts_cartoneiras(id) ON DELETE CASCADE
+);

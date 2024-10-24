@@ -1,0 +1,7 @@
+# Ignorar arquivos temporários
+*.log
+*.tmp
+
+# Ignorar diretório vendor
+vendor/
+
